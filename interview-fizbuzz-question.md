@@ -38,8 +38,19 @@ const myFiller = Array
 ```
 - ways of implementing IIFE
 ```sh
-(function () { /* ... */ })();
-(function () { /* ... */ }());
-(() => { /* ... */ })(); // With ES6 arrow functions (though parentheses only allowed on outside)
+(function () { /* ... */ })(); 
+(function () { /* ... */ }()); // Reccomended by Croockford
+(() => { /* ... */ })();       // With ES6 arrow functions (though parentheses only allowed on outside)
 
+```
+- selfexecuting function expression does not require the closing parantheses, like :  
+```sh
+  var i = function(){ return 10; }();
+  true && function(){ /* ... */ }();
+  0, function(){ /* ... */ }();
+
+```
+- when passig variables 
+```sh
+(function(x, y){/* ... */})(3, 5);
 ```

@@ -1,6 +1,7 @@
 # js-lectures
->js-lectrues are some of the points that I tend to 
->
+> js-lectrues are some key points on javascript
+> these keypoints is just for my rememberance
+> I think sharing these might help some one else also. 
 
 
 
@@ -22,5 +23,15 @@ const myFiller = Array
     return (f ? b ? "fizzbuzz" : "fizz" : b ? "buzz" : elem);
   }
 ).map(elem => console.log ( elem ))
+
+```
+### Function in javascript
+- self executing function
+
+```sh
+(fuction(){
+  console.log ('this is self execution function!');
+  alert('hello');
+})();
 
 ```

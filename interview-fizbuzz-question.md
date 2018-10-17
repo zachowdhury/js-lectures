@@ -36,7 +36,7 @@ const myFiller = Array
 })();
 
 ```
-ways of implementing IIFE
+- ways of implementing IIFE
 ```sh
 (function () { /* ... */ })();
 (function () { /* ... */ }());

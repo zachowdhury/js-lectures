@@ -11,11 +11,11 @@ so how to approach that vision.
 
 ```sh
 const myFiller = Array
-  .from(new Array(100).keys(),n=>n+1)
-  .map((elem,itm,arr)=>{
+  .from(new Array(100).keys(),n => n+1)
+  .map((elem, itm, arr)=>{
     var f = elem % 3 == 0, b = elem % 5 == 0;
     return (f ? b ? "fizzbuzz" : "fizz" : b ? "buzz" : elem);
   }
-).map(e=>console.log ( e ))
+).map(elem => console.log ( elem ))
 
 ```

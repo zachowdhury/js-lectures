@@ -1,6 +1,6 @@
 # js-lectures
 > js-lectrues are some key points on javascript
-> these keypoints is just for my rememberance
+> these keypoints is just for my rememberance.
 > I think sharing these might help some one else also. 
 
 

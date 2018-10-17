@@ -26,12 +26,20 @@ const myFiller = Array
 
 ```
 ### Function in javascript
-- self executing function
+- self executing function or IIFE, Immediately-invoked function expression
+
 
 ```sh
 (fuction(){
   console.log ('this is self execution function!');
   alert('hello');
 })();
+
+```
+ways of implementing IIFE
+```sh
+(function () { /* ... */ })();
+(function () { /* ... */ }());
+(() => { /* ... */ })(); // With ES6 arrow functions (though parentheses only allowed on outside)
 
 ```

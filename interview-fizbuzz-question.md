@@ -1,4 +1,9 @@
 # js-lectures
+>js-lectrues are some of the points that I tend to 
+>
+
+
+
 ### Interview question 
 When it comes to "interview test" questions, the subject of FizzBuzz often comes up, like write a function;
 - which populates integer 1 to 100 , [you could generate an Array programatically]

@@ -50,7 +50,7 @@ const myFiller = Array
   0, function(){ /* ... */ }();
 
 ```
-- when passig variables 
+- when passing variables 
 ```sh
 (function(x, y){/* ... */})(3, 5);
 ```

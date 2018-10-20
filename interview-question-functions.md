@@ -67,7 +67,9 @@ This code is the same as
 if(person) {
 	var name = person.getName();
 }
-The || operator is used for setting default values.
+// The || operator is used for setting default values.
+// here we check if person have any name
+// if not present then we will assign value "John Doe"
 
 var name = persons_name || "John Doe";
 The equalant code is

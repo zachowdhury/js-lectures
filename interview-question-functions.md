@@ -56,7 +56,13 @@ const myFiller = Array
 ```
 ### What about Short-Circuit operators:
 What would be easyway to define as I could explain , Short-circuit evaluation means that when evaluating boolean expressions (logical AND and OR) you can stop as soon as you find the first condition which satisfies or negates the expression.
-Example here,
+Suppose, 
+```sh
+if (a == b || c == d || e == f) {
+    // Do something
+}
+```
+if a==b returns true then, c==d and e==f will never be evaluated, because the evaluation outcome will end as the first condition suffice.
 The && and || operators are called short-circuit operators. 
 They will return the value of the second operand based on the value of the first operand.
 

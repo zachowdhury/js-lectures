@@ -54,8 +54,9 @@ const myFiller = Array
 ```sh
 (function(x, y){/* ... */})(3, 5);
 ```
-### What about Short-Circuit operators
-
+### What about Short-Circuit operators:
+What would be easyway to define as I could explain , Short-circuit evaluation means that when evaluating boolean expressions (logical AND and OR) you can stop as soon as you find the first condition which satisfies or negates the expression.
+Example here,
 The && and || operators are called short-circuit operators. 
 They will return the value of the second operand based on the value of the first operand.
 

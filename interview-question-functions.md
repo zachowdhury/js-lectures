@@ -62,7 +62,16 @@ if (a == b || c == d || e == f) {
     // Do something
 }
 ```
-if a==b returns true then, c==d and e==f will never be evaluated, because the evaluation outcome will end as the first condition suffice.
+if a==b returns true then, c==d and e==f will never be evaluated, because the evaluation outcome will end as the first condition suffice. when a == b is false, then c == d is evaluated; if it's true, then e == f is never evaluated. This may not seem to make any difference, but consider:
+```sh
+if (fizz() || bar() || baz()) {
+    // Do something
+}
+```
+now If fizz() returns true, then bar and baz are never called, because the expression's outcome has already been determined. So if bar or baz has some other effect than just returning something (a side effect), those effects never occur.
+
+#### other example, 
+
 The && and || operators are called short-circuit operators. 
 They will return the value of the second operand based on the value of the first operand.
 

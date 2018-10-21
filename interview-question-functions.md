@@ -1,3 +1,4 @@
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 # js-lectures
 > js-lectrues are some key points on javascript
 > these keypoints is just for my rememberance.
@@ -70,6 +71,7 @@ if (fizz() || bar() || baz()) {
 ```
 now If fizz() returns true, then bar and baz are never called, because the expression's outcome has already been determined. So if bar or baz has some other effect than just returning something (a side effect), those effects never occur.
 #### NOTE! 
+Note that not all expressions are short-circuited. The || and && operators are short-circuited, but | and & are not, nor are * or /; in fact most operators are not.
 
 #### other example, 
 

@@ -69,6 +69,7 @@ if (fizz() || bar() || baz()) {
 }
 ```
 now If fizz() returns true, then bar and baz are never called, because the expression's outcome has already been determined. So if bar or baz has some other effect than just returning something (a side effect), those effects never occur.
+#### NOTE! 
 
 #### other example, 
 

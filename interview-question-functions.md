@@ -3,9 +3,9 @@
 > js-lectrues are some key points on javascript
 > these keypoints is just for my rememberance.
 > I think sharing these might help some one else also. 
+> 
 
-
-
+When you start to learn javascript for the beginnin, https://stackoverflow.com/ is your best frind.
 ### Interview question 
 When it comes to "interview test" questions, the subject of FizzBuzz often comes up, like write a function;
 - which populates integer 1 to 100 , [you could generate an Array programatically]

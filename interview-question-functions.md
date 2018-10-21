@@ -81,7 +81,8 @@ if(persons_name) {
 ```
 
 ### What is ternary operation :
-Ternary operation could be 
+Ternary operation is a very short and elegent way to express logic shortly,
+Ternary stands for three. So when creating a ternary we can block it out in three parts:
 ```sh
 variable = expression part ? true function : false function;
 

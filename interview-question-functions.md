@@ -54,7 +54,7 @@ const myFiller = Array
 ```sh
 (function(x, y){/* ... */})(3, 5);
 ```
-### Things about Short-Circuit operators
+### What about Short-Circuit operators
 
 The && and || operators are called short-circuit operators. 
 They will return the value of the second operand based on the value of the first operand.
@@ -62,8 +62,7 @@ They will return the value of the second operand based on the value of the first
 The && operator is useful for checking for null objects before accessing their attributes. For example...
 ```sh
 var name = person && person.getName();
-This code is the same as
-
+// This code is the same as
 if(person) {
 	var name = person.getName();
 }
@@ -72,12 +71,19 @@ if(person) {
 // if not present then we will assign value "John Doe"
 
 var name = persons_name || "John Doe";
-The equalant code is
+//The other way to writing this code is
 
 if(persons_name) {
 	var name = persons_name;
 } else {
 	var name = "John Doe";
 }
+```
+
+### What is ternary operation :
+Ternary operation could be 
+```sh
+variable = expression part ? true function : false function;
+
 ```
 

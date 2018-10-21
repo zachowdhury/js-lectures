@@ -82,12 +82,12 @@ if(persons_name) {
 
 ### What is ternary Expression :
 Ternary operation is a very short and elegent way to express logic shortly, 
-- ternary expressions are expression, not an statement.
-- what is an expression, an expression is a code block that evaluates to a single vlue.
-- what is an statementm a statement is a code block that may not evaluate to a value at all,. 
+- ternary expressions are expression, not a statement.
+- what is an expression, an expression is a code block that evaluates to a single value.
+- what is a statement, a statement is a code block that may not evaluate to a value at all,. 
 Ternary stands for three. So when creating a ternary we can block it out in three parts:
 ```sh
 variable = expression part ? true function : false function;
 
 ```
-
+### What is Currying and partials:

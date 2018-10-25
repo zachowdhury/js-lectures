@@ -109,9 +109,18 @@ Ternary stands for three. So when creating a ternary we can block it out in thre
 variable = expression part ? true function : false function;
 
 ```
+### How to chain or cascade ternary expression with nested if condition.
+```sh
+//
+```
 ### What is Currying and partials:
-
+```sh
+//
+```
 ### How promises works
+```sh
+//
+```
 ### promises
 ```sh
 //example code using fetch in React.

@@ -110,3 +110,16 @@ variable = expression part ? true function : false function;
 
 ```
 ### What is Currying and partials:
+
+### How promises works
+### promises
+```sh
+//example code using fetch in React.
+let results = fetch(this.props.url)
+        .then((res) => {
+            return res.json();
+        })
+        .then((data) => {
+            return data;
+        })
+```

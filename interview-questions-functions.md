@@ -123,12 +123,14 @@ variable = expression part ? true function : false function;
 ```
 ### promises
 ```sh
+
 //example code using fetch in React.
-let results = fetch(this.props.url)
+let results = fetch(this.props.url,{method:'GET'}) // method portion could be in the .env as settings, 
         .then((res) => {
-            return res.json();
+            return res.json();  // this returns response object 
+	    			// extracted from the promise to the next then chain.
         })
         .then((data) => {
-            return data;
+            return data; // this returns response data as desired 
         })
 ```

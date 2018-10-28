@@ -124,13 +124,23 @@ variable = expression part ? true function : false function;
 ### promises
 ```sh
 
-// example code using fetch in React.
-let results = fetch(this.props.url,{method:'GET'}) // method portion could be in the .env as settings, 
-        .then((res) => {
-            return res.json();  // this returns response object 
-	    			// extracted from the promise to the next then chain.
-        })
-        .then((data) => {
-            return data; // this returns response data as desired 
-        })
+1 // example code using fetch in React.
+2 let results = fetch(this.props.url,{method:'GET'}) // method portion could be in the .env as settings, 
+3         .then((res) => {
+4            return res.json();  // this returns response object 
+5	    			// extracted from the promise to the next then chain.
+6        })
+7        .then((data) => {
+8            return data; // this returns response data as desired 
+9        })
 ```
+At line 3 we get a response but the response we get is not JSON but an object with a series of methods we can use depending on what we want to do with the information, these methods include:
+
+clone() - As the method implies this method creates a clone of the response.
+redirect() - This method creates a new response but with a different URL.
+arrayBuffer() - In here we return a promise that resolves with an ArrayBuffer.
+formData() - Also returns a promise but one that resolves with FormData object.
+blob() - This is one resolves with a Blob.
+text() - In this case it resolves with a string.
+json() - Lastly we have the method to that resolves the promise with JSON.
+Looking at all these methods the one we want is the JSON one because we want to handle our data as a JSON object so we add: res.json() method on this.

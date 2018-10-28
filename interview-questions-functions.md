@@ -121,7 +121,7 @@ variable = expression part ? true function : false function;
 ```sh
 //
 ```
-### promises
+### Fetching api data [promises]
 ```sh
 
 1 // example code using fetch in React.

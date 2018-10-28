@@ -136,18 +136,12 @@ variable = expression part ? true function : false function;
 ```
 At line 3 we get a response but the response we get is not JSON but an object with a series of methods we can use depending on what we want to do with the information, these methods include:
 
-clone() - As the method implies this method creates a clone of the response.
-
-redirect() - This method creates a new response but with a different URL.
-
-arrayBuffer() - In here we return a promise that resolves with an ArrayBuffer.
-
-formData() - Also returns a promise but one that resolves with FormData object.
-
-blob() - This is one resolves with a Blob.
-
-text() - In this case it resolves with a string.
-
-json() - Lastly we have the method to that resolves the promise with JSON.
+- clone() - As the method implies this method creates a clone of the response.
+- redirect() - This method creates a new response but with a different URL.
+- arrayBuffer() - In here we return a promise that resolves with an ArrayBuffer.
+- formData() - Also returns a promise but one that resolves with FormData object.
+- blob() - This is one resolves with a Blob.
+- text() - In this case it resolves with a string.
+- json() - Lastly we have the method to that resolves the promise with JSON.
 
 Looking at all these methods the one we want is the JSON one because we want to handle our data as a JSON object so we add: res.json() method on this.

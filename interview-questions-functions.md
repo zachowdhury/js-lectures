@@ -143,4 +143,5 @@ formData() - Also returns a promise but one that resolves with FormData object.
 blob() - This is one resolves with a Blob.
 text() - In this case it resolves with a string.
 json() - Lastly we have the method to that resolves the promise with JSON.
+
 Looking at all these methods the one we want is the JSON one because we want to handle our data as a JSON object so we add: res.json() method on this.

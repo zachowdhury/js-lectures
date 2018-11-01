@@ -1,2 +1,2 @@
 ### Here is some useful Public apis 
-thaks to the https://github.com/toddmotto
+Gratitude from Todd [Motto] (https://github.com/toddmotto)

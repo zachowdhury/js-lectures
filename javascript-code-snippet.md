@@ -14,3 +14,8 @@ function round(value, decimals) {
 
 round(1.005, 2); // 1.01
 ```
+OR here using fixed() method 
+```sh
+const myNumber = 2.323232323232
+myNumber.fixed(2)
+```

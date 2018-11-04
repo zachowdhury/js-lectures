@@ -1,6 +1,6 @@
 # This document is written by [Data Driven Document or D3](https://d3js.org/)
 
-
+1. [Graph Scale and data](https://github.com/uber/react-vis/blob/master/docs/scales-and-data.md)
 # d3-scale
 
 Scales are a convenient abstraction for a fundamental task in visualization: mapping a dimension of abstract data to a visual representation. Although most often used for position-encoding quantitative data, such as mapping a measurement in meters to a position in pixels for dots in a scatterplot, scales can represent virtually any visual encoding, such as diverging colors, stroke widths, or symbol size. Scales can also be used with virtually any type of data, such as named categorical data or discrete data that requires sensible breaks.

@@ -3,5 +3,5 @@
 2. [Get coordinates for a given place](https://www.latlong.net/place/helsinki-finland-1668.html)
 ### 3. working with maps
 a. [mapbox](https://github.com/mapbox)
-b. [google.map]
+b. [google.map](maps.google.com)
 c.

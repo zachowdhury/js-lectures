@@ -124,15 +124,15 @@ variable = expression part ? true function : false function;
 ### Fetching api data [promises]
 ```sh
 
-1 // example code using fetch in React.
-2 let results = fetch(this.props.url,{method:'GET'}) // method portion could be in the .env as settings, 
-3         .then((res) => {
-4            return res.json();  // this returns response object 
-5	    			// extracted from the promise to the next then chain.
-6        })
-7        .then((data) => {
-8            return data; // this returns response data as desired 
-9        })
+// example code using fetch in React.
+ let results = fetch(this.props.url,{method:'GET'}) // method portion could be in the .env as settings, 
+         .then((res) => {
+            return res.json();  // this returns response object 
+	    			// extracted from the promise to the next then chain.
+        })
+        .then((data) => {
+            return data; // this returns response data as desired 
+        })
 ```
 At line 3 we get a response but the response we get is not JSON but an object with a series of methods we can use depending on what we want to do with the information, these methods include:
 
@@ -145,3 +145,35 @@ At line 3 we get a response but the response we get is not JSON but an object wi
 - json() - Lastly we have the method to that resolves the promise with JSON.
 
 Looking at all these methods the one we want is the JSON one because we want to handle our data as a JSON object so we add: res.json() method on this.
+
+### Passing function as parameter:
+
+```javascript 
+
+function callfunc() {
+alert("Call func called");
+}
+
+
+
+
+function oof(array, callfunc){
+  this.params = array;
+
+  params.map((i,e,a)=>{
+    console.log("item = "+i);
+  });
+
+  if (callfunc && (typeof callfunc==="function")){
+    callfunc();
+  }
+  
+return function bark(str){
+    console.log (str);
+  }
+  
+}
+
+oof([1,2,2,5,4,1,2])("hello");
+
+```

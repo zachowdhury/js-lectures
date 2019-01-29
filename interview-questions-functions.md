@@ -154,7 +154,7 @@ callback function )  -
 ```javascript 
 
 // global / window scope
-function callfunc() {
+function callFunction() {
 alert("Call func called");
 }
 
@@ -175,6 +175,6 @@ function fatFunction(arrayParam, callfunc){
   } 
 }
 
-fatFunction([1,2,2,5,4,1,2])("hello");
+fatFunction([1,2,2,5,4,1,2],callFunction)("hello");
 
 ```

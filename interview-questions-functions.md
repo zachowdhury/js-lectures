@@ -180,7 +180,7 @@ fatFunction([1,2,2,5,4,1,2],callFunction)("hello");
 ```
 Another way of passing function as parameter 
 
-```javascritp 
+```javascript
 
 function fatFunction( val1, val2){
   

@@ -5,4 +5,4 @@ this will also help others to get some sort of basic understaing of javascript's
 
 Call this when you want to learn:
 
-*Javascript.info (https://javascript.info)
+*[Javascript.info](https://javascript.info)

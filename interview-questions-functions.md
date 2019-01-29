@@ -178,3 +178,20 @@ function fatFunction(arrayParam, callfunc){
 fatFunction([1,2,2,5,4,1,2],callFunction)("hello");
 
 ```
+Another way of passing function as parameter 
+
+```javascritp 
+
+function fatFunction( val1, val2){
+  
+  return (val2)(val1);
+}
+
+fatFunction("dog",(input)=>{ console.log (input + " cat"); }); // This prints dog cat
+
+```
+
+
+
+
+

@@ -16,7 +16,7 @@ where condition:
 
 so how to approach that vision.
 
-```sh
+```javascript
 const myFiller = Array
   .from(new Array(100).keys(),n => n+1)
   .map((elem, itm, arr)=>{
@@ -30,7 +30,7 @@ const myFiller = Array
 - self executing function or IIFE, Immediately-invoked function expression
 
 
-```sh
+```javascript
 (fuction(){
   console.log ('this is self execution function!');
   alert('hello');
@@ -38,33 +38,33 @@ const myFiller = Array
 
 ```
 - ways of implementing IIFE
-```sh
+```javascript
 (function () { /* ... */ })(); 
 (function () { /* ... */ }()); // Reccomended by Croockford
 (() => { /* ... */ })();       // With ES6 arrow functions (though parentheses only allowed on outside)
 
 ```
 - selfexecuting function expression does not require the closing parantheses, like :  
-```sh
+```javascript
   var i = function(){ return 10; }();
   true && function(){ /* ... */ }();
   0, function(){ /* ... */ }();
 
 ```
 - when passing variables 
-```sh
+```javascript
 (function(x, y){/* ... */})(3, 5);
 ```
 ### What about Short-Circuit operators:
 What would be easyway to define as I could explain , Short-circuit evaluation means that when evaluating boolean expressions (logical AND and OR) you can stop as soon as you find the first condition which satisfies or negates the expression.
 Suppose, 
-```sh
+```javascript
 if (a == b || c == d || e == f) {
     // Do something
 }
 ```
 if a==b returns true then, c==d and e==f will never be evaluated, because the evaluation outcome will end as the first condition suffice. when a == b is false, then c == d is evaluated; if it's true, then e == f is never evaluated. This may not seem to make any difference, but consider:
-```sh
+```javascript
 if (fizz() || bar() || baz()) {
     // Do something
 }
@@ -79,7 +79,7 @@ The && and || operators are called short-circuit operators.
 They will return the value of the second operand based on the value of the first operand.
 
 The && operator is useful for checking for null objects before accessing their attributes. For example...
-```sh
+```javascript
 var name = person && person.getName();
 // This code is the same as
 if(person) {
@@ -110,19 +110,19 @@ variable = expression part ? true function : false function;
 
 ```
 ### How to chain or cascade ternary expression with nested if condition.
-```sh
+```javascript
 //
 ```
 ### What is Currying and partials:
-```sh
+```javascript
 //
 ```
 ### How promises works
-```sh
+```javascript
 //
 ```
 ### Fetching api data [promises]
-```sh
+```javascript
 
 // example code using fetch in React.
  let results = fetch(this.props.url,{method:'GET'}) // method portion could be in the .env as settings, 
@@ -146,34 +146,35 @@ At line 3 we get a response but the response we get is not JSON but an object wi
 
 Looking at all these methods the one we want is the JSON one because we want to handle our data as a JSON object so we add: res.json() method on this.
 
-### Passing function as parameter:
+### Passing function as parameter, same time return a function within:
+
+Function could be returned from a function and also fuction could be passed as parameter ( which has a fancy name called 
+callback function )  -
 
 ```javascript 
 
+// global / window scope
 function callfunc() {
 alert("Call func called");
 }
 
-
-
-
-function oof(array, callfunc){
-  this.params = array;
-
+function fatFunction(arrayParam, callfunc){
+  
+  this.params = arrayParam;
   params.map((i,e,a)=>{
     console.log("item = "+i);
   });
-
+  
+  // check if not null and type is function 
   if (callfunc && (typeof callfunc==="function")){
     callfunc();
   }
   
-return function bark(str){
+  return function bark(str){
     console.log (str);
-  }
-  
+  } 
 }
 
-oof([1,2,2,5,4,1,2])("hello");
+fatFunction([1,2,2,5,4,1,2])("hello");
 
 ```

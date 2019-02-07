@@ -117,6 +117,24 @@ variable = expression part ? true function : false function;
 ```javascript
 //
 ```
+### Recursive 
+```javascript
+
+function callMe(val){ //<--------------------this is the recursive function, calls itself
+  // Do something with `val`
+  val = val + 1;
+
+  console.log(val);
+
+  // And call it again with the value
+  if(val < 5){
+    callMe(val);
+  }
+}
+
+callMe(1); // 2, 3, 4, 5
+```
+
 ### How promises works
 ```javascript
 //

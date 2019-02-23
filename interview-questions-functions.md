@@ -112,6 +112,8 @@ variable = expression part ? true function : false function;
 ### How to chain or cascade ternary expression with nested if condition.
 ```javascript
 //
+var state= a>b ? 1 : a<b ? -1 : 0 // this returns a bigger than b then 1 if a small then -1 else 0
+
 ```
 ### What is Currying and partials:
 ```javascript

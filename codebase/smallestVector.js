@@ -1,6 +1,11 @@
 /*
+Task :TODO
 create a function(smallVector) which can 
-
+calculate n dimensional vector like 
+vector = [[1,1,1],[2,2,2],[3,3,3]]
+which will callculate each array vector like sqrt(1^2+1^2+1^2)
+and then will compare the small verctors each, from array vector,
+and return smallest one.
 
 */
 

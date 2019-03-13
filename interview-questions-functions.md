@@ -145,7 +145,15 @@ var checkNumbers = {
 checkNumbers.one().two().one().two();
 // this will console out => 'one', 'two', 'one', 'two'
 ```
-##NOTE:
+#### NOTE:
+this will not work when referencing the method directly, like
+```javascript
+var someNumbers = checkNumbers.one;
+someNumbers() //=> undefined
+```
+while in this case <strong> 'this'</strong> is now referencing the global object, 
+
+
 
 
 

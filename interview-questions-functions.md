@@ -109,12 +109,47 @@ Ternary stands for three. So when creating a ternary we can block it out in thre
 variable = expression part ? true function : false function;
 
 ```
-### How to chain or cascade ternary expression with nested if condition.
+### How to Chain or cascade ternary expression with nested if condition.
 ```javascript
 //
 var state= a>b ? 1 : a<b ? -1 : 0 // this returns a bigger than b then 1 if a small then -1 else 0
 
 ```
+### How to Chain function, Casceding:
+
+simple approach is this can be a simple object literal, function constructor, etc
+
+The idea is that all of the methods are stored on some object, 
+The only way to access those methods is to access them through that object. 
+Keeping this in mind, each function must RETURN the object that holds all of these methods.
+
+For exmple :
+
+```javascript
+var checkNumbers = {
+
+  one: function() {
+    console.log('one');
+    // You can return 'this' or reference the object by name
+    return this;
+    // or 
+    // return checkNumbers;
+  },
+
+  two: function() {
+    console.log('two');
+    return this;
+  }
+};
+
+checkNumbers.one().two().one().two();
+// this will console out => 'one', 'two', 'one', 'two'
+```
+##NOTE:
+
+
+
+
 ### What is Currying and partials:
 ```javascript
 //

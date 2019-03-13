@@ -121,7 +121,8 @@ simple approach is this can be a simple object literal, function constructor, et
 
 The idea is that all of the methods are stored on some object, 
 The only way to access those methods is to access them through that object. 
-Keeping this in mind, each function must RETURN the object that holds all of these methods.
+
+Keeping this in mind, each function must <strong>RETURN</strong> the object that holds all of these methods.
 
 For exmple :
 

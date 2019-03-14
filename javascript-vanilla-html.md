@@ -1,3 +1,5 @@
+This is snippet -- 
+
 #### Add button on the fly with js
 
 First create the element using the DOM APIs:

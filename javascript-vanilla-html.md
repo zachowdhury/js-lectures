@@ -17,3 +17,18 @@ Finally, add it to the document:
 ```javascript
     someParentElement.appendChild(button);
 ```
+## Challenges
+#### Nature : Needed to change the div element back-ground image on click event from button
+while implementing this doesn't work
+
+```javascript 
+const toggleBg = document.getElementById('toggle-background');
+        toggleBg.setAttribute('data-setbg', 'img/slider/slider-1.jpg')
+
+```
+html
+```html
+<div id='toggle-background' class="hs-item set-bg" data-setbg="img/slider/slider-1.jpg">
+... ... ... 
+</div>
+```

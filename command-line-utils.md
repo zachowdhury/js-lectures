@@ -1,5 +1,5 @@
 
-#### how to resize image on linux simple way :
+#### How to resize image on linux simple way :
 1. simple issue Convert command :
 
 Same command, with an extra option:

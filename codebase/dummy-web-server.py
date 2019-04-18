@@ -25,13 +25,15 @@ class HTTPHandler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
+	# Do GET operation here with function
         self._set_headers()
-        self.wfile.write("<html><body><h1>hi!</h1></body></html>")
+        self.wfile.write("<html><body><h1>Ok, answere from serser!</h1></body></html>")
 
     def do_HEAD(self):
         self._set_headers()
         
     def do_POST(self):
+ 	# Now do the POST operation here 
         if self.path == '/send':
             form = cgi.FieldStorage(
                 fp=self.rfile,
@@ -45,7 +47,7 @@ class HTTPHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             # self._set_headers()
             # self.end_headers()
-            self.wfile.write("<html><body><h1>this is namaskaar POST!</h1></body></html>")
+            self.wfile.write("<html><body><h1>we have got POST!</h1></body></html>")
             return
         
 def run(server_class=HTTPServer, handler_class=HTTPHandler, port=80):

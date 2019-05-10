@@ -174,6 +174,10 @@ function addition(x) {
    }
 }
 ```
+<strong>What:</strong> Currying always returns another function with only 
+one argument until all of the arguments have been applied. 
+
+
 ### Recursive 
 ```javascript
 

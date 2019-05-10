@@ -160,8 +160,19 @@ while in this case <strong> 'this'</strong> is now referencing the global object
 
 
 ### What is Currying and partials:
+1. Curried function : 
 ```javascript
-//
+
+// Normal function
+function addition(x, y) {
+   return x + y;
+}
+// Curried function
+function addition(x) {
+   return function(y) {
+     return x + y;
+   }
+}
 ```
 ### Recursive 
 ```javascript

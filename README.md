@@ -9,3 +9,8 @@ Call this when you want to learn:
 * [StackoverFlow](https://stackoverflow.com)
 * [MDN](https://developer.mozilla.org/en-US/)
 * [JAva script md-book](https://github.com/getify/You-Dont-Know-JS)
+
+* [CSS/HTML - 1 interneting is hard](https://internetingishard.com/)
+* [CSS tricks](https://css-tricks.com/)
+
+

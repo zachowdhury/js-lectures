@@ -2,4 +2,4 @@ create post request to end pint with POSTman , this shuld be done as a formdata 
 1- creat request collection 
 then the settings according to the image
 follow the image
-![*POSTMAN from data post][postman-img/postman-post-formdata-setting.png]
+![*POSTMAN from data post][/postman-img/postman-post-formdata-setting.png]
